@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="icon" href="/assets/whidbeyisland.png">
+<title>Whidbey Septic - Contact</title>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1990e5;
+        --secondary-color: #f0f3f4;
+        --text-primary: #111518;
+        --text-secondary: #637888;
+        --background-color: #ffffff;
+      }
+      body {
+        font-family: "Public Sans", "Noto Sans", sans-serif;
+      }
+      .nav-active {
+        color: var(--primary-color);
+        font-weight: 700;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden">
+<header class="bg-white/80 backdrop-blur-sm sticky top-0 z-10">
+<div class="flex items-center p-4 justify-between max-w-7xl mx-auto">
+<a href="/" class="flex items-center gap-2 text-white">
+<div class="logo-size rounded-full overflow-hidden">
+<img src="/assets/whidbeysepticlogo.png" class="w-full h-full object-cover" />
+</div>
+</a>
+</div>
+</header>
+<main class="flex-grow">
+<div class="px-4 py-8 md:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h1 class="text-3xl font-bold tracking-tighter text-[var(--text-primary)] sm:text-4xl md:text-5xl">
+                Contact Us
+              </h1>
+<p class="mt-4 text-[var(--text-secondary)] text-lg md:text-xl">
+                We're here to help with all your septic needs on Whidbey Island.
+              </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<h2 class="text-2xl font-bold text-[var(--text-primary)] mb-6">
+                  Send Us a Message
+                </h2>
+<form class="space-y-4" id="contact-form">
+<label class="block">
+<span class="sr-only">Your Name</span>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)] focus:ring-opacity-50 h-14 p-4 text-base" placeholder="Your Name" type="text" name="name" required/>
+</label>
+<div class="space-y-4">
+<label class="block">
+<span class="text-sm font-medium text-[var(--text-primary)] mb-2 block">Site Address</span>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)] focus:ring-opacity-50 h-14 p-4 text-base" placeholder="Street Address" type="text" name="site_street" id="site_street" autocomplete="street-address" required/>
+</label>
+<label class="block">
+<span class="sr-only">City</span>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)] focus:ring-opacity-50 h-14 p-4 text-base" placeholder="City" type="text" name="site_city" id="site_city" autocomplete="address-level2" required/>
+</label>
+<div class="grid grid-cols-2 gap-4">
+<label class="block">
+<span class="sr-only">State</span>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)] focus:ring-opacity-50 h-14 p-4 text-base" placeholder="State" type="text" name="site_state" id="site_state" maxlength="2" pattern="[A-Za-z]{2}" autocomplete="address-level1" required/>
+</label>
+<label class="block">
+<span class="sr-only">Zip Code</span>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)] focus:ring-opacity-50 h-14 p-4 text-base" placeholder="Zip Code" type="text" name="site_zip" id="site_zip" pattern="\d{5}(-\d{4})?" inputmode="numeric" autocomplete="postal-code" required/>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-3 py-2">
+<div class="flex-1 border-t border-gray-300"></div>
+<span class="text-sm font-medium text-[var(--text-secondary)] uppercase">OR</span>
+<div class="flex-1 border-t border-gray-300"></div>
+</div>
+<label class="block">
+<span class="text-sm font-medium text-[var(--text-primary)] mb-2 block">What3Words Address</span>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)] focus:ring-opacity-50 h-14 p-4 text-base" placeholder="What3Words Address (e.g., filled.count.soap)" type="text" name="what3words" id="what3words" required/>
+<span class="text-xs text-gray-500 mt-1 block">Enter 3 words separated by periods (e.g., boot.onward.masking)</span>
+</label>
+<label class="block">
+<span class="sr-only">Your Email</span>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)] focus:ring-opacity-50 h-14 p-4 text-base" placeholder="Your Email" type="email" name="email" required/>
+</label>
+<label class="block">
+<span class="sr-only">Your Phone</span>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)] focus:ring-opacity-50 h-14 p-4 text-base" placeholder="Your Phone" type="tel" name="phone"/>
+</label>
+<label class="block">
+<span class="sr-only">Your Message</span>
+<textarea class="form-textarea mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)] focus:ring-opacity-50 min-h-36 p-4 text-base" placeholder="Your Message" rows="4" name="message" required></textarea>
+</label>
+<button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[var(--primary-color)] hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-color)]" type="submit">
+                    Send Message
+                  </button>
+</form>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-[var(--text-primary)] mb-6">
+                  Contact Information
+                </h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 flex items-center justify-center size-12 rounded-lg bg-[var(--secondary-color)] text-[var(--primary-color)]">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+</svg>
+</div>
+<div>
+<p class="text-lg font-semibold text-[var(--text-primary)]">
+                        Phone
+                      </p>
+<a class="text-base text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="tel:+13609693493">(360) 969-3493</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 flex items-center justify-center size-12 rounded-lg bg-[var(--secondary-color)] text-[var(--primary-color)]">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<rect height="16" rx="2" width="20" x="2" y="4"></rect>
+<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+</svg>
+</div>
+<div>
+<p class="text-lg font-semibold text-[var(--text-primary)]">
+                        Email
+                      </p>
+<a class="text-base text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="mailto:WhidbeySepticLLC@gmail.com?subject=whidbeyseptic.com%20contact&amp;body=Dear%20Ben%20and%20Seth,">WhidbeySepticLLC@gmail.com</a>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<div class="w-full aspect-video rounded-lg overflow-hidden shadow-md">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d340907.45183567604!2d-123.2055118!3d48.1229765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6cbf716b75239f49%3A0x9f4b6e6ef2d71bc8!2sWhidbey%20Septic%20LLC!5e0!3m2!1sen!2sus!4v1752295861169!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-white">
+<div class="border-t border-[var(--secondary-color)]">
+<div class="flex gap-2 bg-white px-4 pb-3 pt-2 max-w-7xl mx-auto md:justify-center md:gap-8">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[var(--text-secondary)] md:flex-row md:flex-none md:gap-2 md:py-2 md:px-3" href="/">
+<svg class="h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+<p class="text-xs font-medium leading-normal tracking-wide md:text-sm">
+                Home
+              </p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[var(--text-secondary)] md:flex-row md:flex-none md:gap-2 md:py-2 md:px-3" href="/services">
+<svg class="h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+</svg>
+<p class="text-xs font-medium leading-normal tracking-wide md:text-sm">
+                Services
+              </p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[var(--text-secondary)] md:flex-row md:flex-none md:gap-2 md:py-2 md:px-3" href="/about">
+<svg class="h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="M12 16v-4"></path>
+<path d="M12 8h.01"></path>
+</svg>
+<p class="text-xs font-medium leading-normal tracking-wide md:text-sm">
+                About
+              </p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[var(--text-primary)] font-bold md:flex-row md:flex-none md:gap-2 md:py-2 md:px-3 nav-active" href="/contact">
+<svg class="h-6 w-6" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<rect height="16" rx="2" width="20" x="2" y="4"></rect>
+<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+</svg>
+<p class="text-xs font-bold leading-normal tracking-wide md:text-sm">
+                Contact
+              </p>
+</a>
+</div>
+<div class="h-5 bg-white md:hidden"></div>
+</div>
+<div class="bg-gray-800 text-white py-8 px-4">
+    <div class="max-w-7xl mx-auto text-center">
+        <p class="text-sm">
+          © 2025 Whidbey Septic LLC. All Rights Reserved. |
+          <a href="/privacy.html" target="_blank" class="underline">Privacy Policy</a> |
+          <a href="/terms.html" target="_blank" class="underline">Terms of Use</a>
+        </p>
+    </div>
+</div>
+</footer>
+</div>
+
+<script>
+  const contactForm = document.getElementById('contact-form');
+  const siteStreetInput = document.getElementById('site_street');
+  const siteCityInput = document.getElementById('site_city');
+  const siteStateInput = document.getElementById('site_state');
+  const siteZipInput = document.getElementById('site_zip');
+  const what3wordsInput = document.getElementById('what3words');
+
+  // Function to format What3Words input
+  function formatWhat3Words(input) {
+    // Remove any leading slashes and spaces
+    let cleaned = input.replace(/^[\/\s]+/, '').toLowerCase();
+    
+    // Remove any characters that aren't letters, periods, or hyphens
+    cleaned = cleaned.replace(/[^a-z.\-]/g, '');
+    
+    // Limit to 3 words by allowing only 2 periods
+    // Split by period, take first 3 parts, then rejoin
+    // This preserves periods as users type while preventing a 3rd period
+    const parts = cleaned.split('.');
+    if (parts.length > 3) {
+      // Keep only first 3 parts (separated by 2 periods)
+      return parts.slice(0, 3).join('.');
+    }
+    
+    return cleaned;
+  }
+
+  // Function to validate What3Words format (3 words separated by periods)
+  function validateWhat3Words(input) {
+    const w3wPattern = /^[a-z\-]+\.[a-z\-]+\.[a-z\-]+$/;
+    return w3wPattern.test(input.trim().toLowerCase());
+  }
+
+  // Handle What3Words input formatting
+  what3wordsInput.addEventListener('input', function(e) {
+    const cursorPosition = e.target.selectionStart;
+    const oldValue = e.target.value;
+    const formatted = formatWhat3Words(oldValue);
+    
+    if (oldValue !== formatted) {
+      e.target.value = formatted;
+      
+      // Try to maintain cursor position
+      const diff = formatted.length - oldValue.length;
+      const newPosition = cursorPosition + diff;
+      e.target.setSelectionRange(newPosition, newPosition);
+    }
+    
+    updateRequiredFields();
+  });
+
+  // Handle state input formatting (auto-uppercase)
+  siteStateInput.addEventListener('input', function(e) {
+    e.target.value = e.target.value.toUpperCase();
+  });
+
+  // Function to check if site address fields have any values
+  function hasSiteAddressValue() {
+    return siteStreetInput.value.trim() || 
+           siteCityInput.value.trim() || 
+           siteStateInput.value.trim() || 
+           siteZipInput.value.trim();
+  }
+
+  // Function to update required states based on input
+  function updateRequiredFields() {
+    const hasSiteAddress = hasSiteAddressValue();
+    const hasWhat3words = what3wordsInput.value.trim();
+
+    // If either address type has any value, make that type's fields required
+    // and the other type's fields optional
+    if (hasSiteAddress) {
+      // Site address has values, make all site address fields required
+      siteStreetInput.setAttribute('required', '');
+      siteCityInput.setAttribute('required', '');
+      siteStateInput.setAttribute('required', '');
+      siteZipInput.setAttribute('required', '');
+      what3wordsInput.removeAttribute('required');
+    } else if (hasWhat3words) {
+      // What3Words has value, make site address fields optional
+      siteStreetInput.removeAttribute('required');
+      siteCityInput.removeAttribute('required');
+      siteStateInput.removeAttribute('required');
+      siteZipInput.removeAttribute('required');
+      what3wordsInput.setAttribute('required', '');
+    } else {
+      // Both are empty, make all site address fields required (default)
+      siteStreetInput.setAttribute('required', '');
+      siteCityInput.setAttribute('required', '');
+      siteStateInput.setAttribute('required', '');
+      siteZipInput.setAttribute('required', '');
+      what3wordsInput.setAttribute('required', '');
+    }
+  }
+
+  // Add input event listeners to all address fields
+  siteStreetInput.addEventListener('input', updateRequiredFields);
+  siteCityInput.addEventListener('input', updateRequiredFields);
+  siteStateInput.addEventListener('input', updateRequiredFields);
+  siteZipInput.addEventListener('input', updateRequiredFields);
+
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const name = contactForm.elements['name'].value;
+    const siteStreet = contactForm.elements['site_street'].value.trim();
+    const siteCity = contactForm.elements['site_city'].value.trim();
+    const siteState = contactForm.elements['site_state'].value.trim();
+    const siteZip = contactForm.elements['site_zip'].value.trim();
+    const what3words = contactForm.elements['what3words'].value.trim();
+    const email = contactForm.elements['email'].value;
+    const phone = contactForm.elements['phone'].value;
+    const message = contactForm.elements['message'].value;
+
+    // Check if we have site address components
+    const hasSiteAddress = siteStreet || siteCity || siteState || siteZip;
+
+    // Validate that at least one address type is filled
+    if (!hasSiteAddress && !what3words) {
+      alert('Please enter either a Site Address or a What3Words address.');
+      return;
+    }
+
+    // If site address is started, validate all fields are filled
+    if (hasSiteAddress) {
+      if (!siteStreet || !siteCity || !siteState || !siteZip) {
+        alert('Please complete all Site Address fields (Street, City, State, and Zip Code).');
+        return;
+      }
+      
+      // Validate state format (2 letters)
+      if (!/^[A-Z]{2}$/.test(siteState)) {
+        alert('Please enter a valid 2-letter state code (e.g., WA, CA, NY).');
+        siteStateInput.focus();
+        return;
+      }
+      
+      // Validate zip code format
+      if (!/^\d{5}(-\d{4})?$/.test(siteZip)) {
+        alert('Please enter a valid zip code (e.g., 98101 or 98101-1234).');
+        siteZipInput.focus();
+        return;
+      }
+    }
+
+    // Validate What3Words format if it's provided
+    if (what3words && !validateWhat3Words(what3words)) {
+      alert('Please enter a valid What3Words address with exactly 3 words separated by periods (e.g., filled.count.soap)');
+      what3wordsInput.focus();
+      return;
+    }
+
+    // Build the email body
+    let addressInfo = '';
+    if (hasSiteAddress) {
+      const fullAddress = `${siteStreet}, ${siteCity}, ${siteState} ${siteZip}`;
+      addressInfo += `Site Address: ${fullAddress}\n`;
+    }
+    if (what3words) {
+      // Convert What3Words to clickable link
+      const w3wLink = `https://w3w.co/${what3words}`;
+      addressInfo += `What3Words: ${w3wLink}\n`;
+    }
+
+    const mailtoLink = `mailto:WhidbeySepticLLC@gmail.com` +
+                       `?subject=${encodeURIComponent('Contact Form Submission from ' + name)}` +
+                       `&body=${encodeURIComponent(
+                         `Name: ${name}\n` +
+                         addressInfo +
+                         `Email: ${email}\n` +
+                         `Phone: ${phone}\n\n` +
+                         `Message:\n${message}`
+                       )}`;
+
+    // Attempt to open mail client
+    window.location.href = mailtoLink;
+  });
+</script>
+</body></html>
